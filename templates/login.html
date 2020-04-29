@@ -14,10 +14,19 @@
                 {{ form.password.label(class="form-control-label") }}
                 {{ form.password(class="form-control form-control-lg") }}
             </div>
+            <div class="form-group">
+                {{ form.remember}}
+                {{ form.remember.label}}
+
+            </div>
         </fieldset>
+   
         <div class="form-group">
             {{ form.submit(class="btn btn-outline-info btn-block") }}
         </div>
+        <small class="text-muted">
+            <a href="#">Forgot Password?</a>
+        </small>
     </form>
 </div>
 <div class="border-top pt-3 mb-5">

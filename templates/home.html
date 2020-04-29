@@ -14,7 +14,13 @@
                 </div>
                 <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
                 <p class="article-content">{{ post.content }}</p>
+                {% if post.liked %}
+                   <small><span class="h5 text-secondary">{{post.liked}}</span> Likes</small>
+                {% else %}
+                   <small>No Likes</small>
+                {% endif %}
               </div>
+
             </article>
             {% endfor %}
            </div>
